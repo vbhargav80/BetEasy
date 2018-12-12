@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using BetEasy.DataAccess.Repositories;
+﻿using Autofac;
 
 namespace BetEasy.App
 {
@@ -11,8 +6,12 @@ namespace BetEasy.App
     {
         static void Main(string[] args)
         {
-            var meeting = new CaulfieldRepository().GetMeeting();
-            var fixture = new WolferhamptonRepository().GetFixture();
+            var container = ContainerConfig.Configure();
+            using (var scope = container.BeginLifetimeScope())
+            {
+                var app = scope.Resolve<IApplication>();
+                app.Run();
+            }
         }
     }
 }

@@ -68,6 +68,7 @@
     <Compile Include="Model\Wolferhampton\SelectionTags.cs" />
     <Compile Include="Model\Wolferhampton\Tags.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\HorseService.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

@@ -3,7 +3,7 @@
     public class Selection
     {
         public string Id { get; set; }
-        public float Price { get; set; }
+        public decimal Price { get; set; }
         public SelectionTags Tags { get; set; }
     }
 }
