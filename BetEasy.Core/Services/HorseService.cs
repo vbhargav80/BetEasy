@@ -32,6 +32,7 @@ namespace BetEasy.Core.Services
             var meeting = _caulfieldRepository.GetMeeting();
             var fixture = _wolferhamptonRepository.GetFixture();
 
+            // With time i would have refactored these 2 methods into separate transform classes and injected them in
             var horses = TransformCaulfieldMeetingToHorses(meeting);
             var wolferhamptonHorses = TransformWolferhamptonFixtureToHorses(fixture);
 

@@ -20,9 +20,9 @@ namespace BetEasy.App
         {
             var horses = _horseService.GetAllHorses();
 
-            foreach (var horse in horses.OrderBy(x => x.Price))
+            foreach (var horse in horses)
             {
-                Console.WriteLine(horse.Name);
+                Console.WriteLine($"HorseName: {horse.Name}, Price:{horse.Price}");
             }
 
             Console.WriteLine("Enter any key to exit");
