@@ -43,6 +43,27 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Model\Caulfield\Distance.cs" />
+    <Compile Include="Model\Caulfield\Horse.cs" />
+    <Compile Include="Model\Caulfield\HorseWeight.cs" />
+    <Compile Include="Model\Caulfield\Jockey.cs" />
+    <Compile Include="Model\Caulfield\Meeting.cs" />
+    <Compile Include="Model\Caulfield\MeetingTrack.cs" />
+    <Compile Include="Model\Caulfield\Race.cs" />
+    <Compile Include="Model\Caulfield\RacePrice.cs" />
+    <Compile Include="Model\Caulfield\RacePriceHorse.cs" />
+    <Compile Include="Model\Caulfield\Statistic.cs" />
+    <Compile Include="Model\Caulfield\Trainer.cs" />
+    <Compile Include="Model\Common\Horse.cs" />
+    <Compile Include="Model\Wolferhampton\Fixture.cs" />
+    <Compile Include="Model\Wolferhampton\FixtureRawData.cs" />
+    <Compile Include="Model\Wolferhampton\Market.cs" />
+    <Compile Include="Model\Wolferhampton\MarketTag.cs" />
+    <Compile Include="Model\Wolferhampton\Participant.cs" />
+    <Compile Include="Model\Wolferhampton\ParticipantTags.cs" />
+    <Compile Include="Model\Wolferhampton\Selection.cs" />
+    <Compile Include="Model\Wolferhampton\SelectionTags.cs" />
+    <Compile Include="Model\Wolferhampton\Tags.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -50,7 +71,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Interfaces\" />
-    <Folder Include="Model\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
